@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Safety Portal</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/css/application.css">
+</head>
+<body>
+  <div class="modal">
+  <div class="content">
+    <h2>You were disconnected</h2>
+    <a href="#" class="close icon-Cancel"></a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna wirl aliqua.</p>
+    <form class="form form-inline" action="#" method="post">
+      <div class="form-group">
+        <label for="usn">Username</label>
+        <input type="text" class="textInput" value="safety-line" name="username" id="usn">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password</label>
+        <input type="password" class="textInput" name="password" value="defaultpassword" id="pwd">
+      </div>
+      <input type="submit" class="btn btn-primary" value="Login">
+    </form>
+  </div>
+</div><header class="header">
+  <img src="assets/images/logo.png" alt="Company logo" class="logo">
+  <nav class="nav">
+    <div class="table-container">
+      <div class="table-cell logo-sl">
+        <a href="index.html" title="Safety Portal home">
+          <img src="assets/images/sl-logo-header.png" alt="Safety Portal">
+        </a>
+      </div>
+      <ul class="table-cell directnav">
+        <li class="dropdown">
+          <a href="index.html" class="active">
+            Reports
+          </a>
+          <ul>
+            <li>
+              <a href="index.html">
+                Create new report
+              </a>
+            </li>
+            <li><a href="sent_report.html">Sent reports</a></li>
+            <li><a href="report_collaborations.html">Other reports</a></li>
+            <li><a href="report_drafts.html">Drafts</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="finding_index.html" >Finding</a>
+        </li>
+        <li>
+          <a href="action_index.html" >Action</a>
+        </li>
+        <li>
+          <a href="publication_index.html" >Publication</a>
+        </li>
+        <li>
+          <a href="">Documentation</a>
+        </li>
+      </ul>
+      <div class="social table-cell">
+        <div class="notification">
+          <span class="notifNew"></span>
+          <span class="icon-Notification"></span>
+          <div class="tooltip">
+            <a href="action_view.html">Your action plan "<b>AIRPORT / Bird threat prevention action</b>" has been sent and is pending approbation from conformity management.</a>
+          </div>
+        </div>
+        <div class="message " >
+          <a href="message_index.html">
+            <span class="notifNew active"></span>
+            <span class="icon-CommentwithLines"></span>
+          </a>
+        </div>
+        <div class="user">
+          <span>RM</span>
+          <div class="tooltip">
+            Welcome <b>Romain Maillard</b> from <b>Maintenance service</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- DEMO -->
+  <div class="demoCalls">
+    <button id="demoModal">Summon modal</button>
+  </div>
+  <!-- END DEMO -->
+
+  <div class="global-background"></div>
+  <div class="global-container">
+    <div class="home">
+  <div class="row">
+    <div class="col-2-5">
+      <h1 class="title">Create report</h1>
+      <div class="customSelect menu">
+        <span class="icon-DownArrow"></span>
+        <select id="selectReport">
+          <option disabled selected>
+            Select report type
+          </option>
+          <option>
+            Air Safety
+          </option>
+          <option>
+            Ground Safety
+          </option>
+          <option>
+            Dangerous Goods
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-3-5">
+      <h1 class="title">Browse reports</h1>
+      <a class="btn btn-gray" href="sent_report.html">
+        <span class="icon-Location"></span>
+        Sent reports
+      </a>
+      <a class="btn btn-gray" href="report_collaborations.html">
+        <span class="icon-Users"></span>
+        Other reports
+      </a>
+      <a class="btn btn-gray" href="report_drafts.html">
+        <span class="icon-Save"></span>
+        Drafts
+      </a>
+    </div>
+  </div>
+  <div class="row hideBefSelect">
+    <div class="col-3-5">
+      <h1 class="title">Description</h1>
+      <p>Cras dictum. Maecenas ut turpis. In vitae erat ac orci dignissim eleifend. Nunc quis justo. Sed vel ipsum in purus tincidunt pharetra. Sed pulvinar, felis id consectetuer malesuada, enim nisl mattis elit, a facilisis tortor nibh quis leo. Sed augue lacus, pretium vitae.</p>
+    </div>
+  </div>
+  <form class="form">
+    <div class="form-row row">
+      <div class="col-2-4 form-group">
+        <label for="TITLE" class="mandatory">Title</label>
+        <input type="text" class="textInput margin-10" placeholder="eg. Text helper" id="TITLE">
+      </div>
+      <div class="col-1-4 form-group">
+        <label>Where to send this report?</label>
+        <div class="customSelect margin-10">
+          <span class="icon-DownArrow"></span>
+          <select>
+            <option disabled selected>
+              Select from list
+            </option>
+            <option>
+              Maintenance
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="col-1-4">
+        <div class="form-group clearfix">
+          <label for="sendanon" class="floatleft">Send anonymously</label>
+          <div class="toggleCheck floatright">
+            <input type="checkbox" name="sendanon" id="sendanon">
+            <label for="sendanon"></label>
+          </div>
+        </div>
+        <div class="form-group clearfix margin-15">
+          <label for="reqans" class="floatleft">Request answer</label>
+          <div class="toggleCheck floatright">
+            <input type="checkbox" name="reqans" id="reqans" checked>
+            <label for="reqans"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="hideBefSelect form-row row">
+      <div class="col-1-1">
+        <h2 class="title">Form</h2>
+      </div>
+      <div class="col-1-4">
+        <div class="form-group clearfix">
+          <div class="form-group floatleft">
+            <input type="radio" name="optgroup1" value="0" id="optgroup1_0" class="radiobtn" checked>
+            <label for="optgroup1_0">CPT</label>
+          </div>
+          <div class="form-group floatleft">
+            <input type="radio" name="optgroup1" value="1" class="radiobtn" id="optgroup1_1">
+            <label for="optgroup1_1">F/O</label>
+          </div>
+        </div>
+        <div class="clearleft form-group">
+          <input type="radio" name="optgroup1" value="2" id="optgroup1_2" class="radiobtn">
+          <label for="optgroup1_2">Chief Purser/Cabin Crew</label>
+        </div>
+      </div>
+      <div class="col-1-4">
+        <div class="form-group margin-10">
+          <input type="radio" name="optgroup2" value="0" id="optgroup2_0" class="radiobtn">
+          <label for="optgroup2_0">PF</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="optgroup2" value="1" id="optgroup2_1" class="radiobtn">
+          <label for="optgroup2_1">PNF</label>
+        </div>
+      </div>
+      <div class="col-1-4">
+        <div class="form-group margin-10">
+          <label>Flight data readout requested:</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="optgroup3" value="0" id="optgroup3_0" class="radiobtn">
+          <label for="optgroup3_0">Yes</label>
+          <input type="radio" name="optgroup3" value="1" id="optgroup3_1" class="radiobtn">
+          <label for="optgroup3_1">No</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="hideBefSelect form-row row">
+      <div class="col-1-1">
+        <h2 class="title">Context</h2>
+      </div>
+      <div class="col-1-5">
+        <div class="form-group">
+          <input type="radio" name="optgroup4" value="0" id="optgroup4_0" class="radiobtn">
+          <label for="optgroup4_0">Icing</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="optgroup4" value="1" id="optgroup4_1" class="radiobtn">
+          <label for="optgroup4_1">Lightning</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="optgroup4" value="4" id="optgroup4_4" class="radiobtn">
+          <label for="optgroup4_4">Dangerous goods</label>
+        </div>
+      </div>
+      <div class="col-1-5">
+        <div class="form-group">
+          <input type="radio" name="optgroup4" value="2" id="optgroup4_2" class="radiobtn">
+          <label for="optgroup4_2">Volcanic ashes</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="optgroup4" value="3" id="optgroup4_3" class="radiobtn">
+          <label for="optgroup4_3">Wake turbulence</label>
+        </div>
+        <div class="form-group optother">
+          <input type="radio" name="optgroup4" value="5" id="optgroup4_5" class="radiobtn">
+          <label for="optgroup4_5">Other</label>
+          <input type="text" class="textInput">
+        </div>
+      </div>
+      <div class="col-1-5">
+        <div class="form-group">
+          <input type="radio" name="optgroup4" value="6" id="optgroup4_6" class="radiobtn">
+          <label for="optgroup4_6">ATC</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="optgroup4" value="7" id="optgroup4_7" class="radiobtn">
+          <label for="optgroup4_7">Bird strike</label>
+        </div>
+      </div>
+      <div class="col-1-5">
+        <div class="form-group">
+          <input type="radio" name="optgroup4" value="8" id="optgroup4_8" class="radiobtn">
+          <label for="optgroup4_8">Security</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="optgroup4" value="9" id="optgroup4_9" class="radiobtn">
+          <label for="optgroup4_9">Technical failure</label>
+        </div>
+      </div>
+      <div class="col-1-5">
+        <div class="form-group">
+          <input type="radio" name="optgroup4" value="10" id="optgroup4_10" class="radiobtn">
+          <label for="optgroup4_10">MTO</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="optgroup4" value="11" id="optgroup4_11" class="radiobtn">
+          <label for="optgroup4_11">Weather turbulence</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="hideBefSelect form-row row">
+      <div class="col-1-1">
+        <h2 class="title">Flight</h2>
+      </div>
+      <div class="col-1-4">
+        <div class="form-group">
+          <label for="flightnum">Flight number</label>
+          <input type="text" class="textInput margin-10" id="flightnum" placeholder="eg. Flight num">
+        </div>
+        <div class="form-group margin-20 with-icon">
+          <label for="DATE" class="mandatory">Date</label>
+          <input type="date" class="textInput margin-10" id="DATE" placeholder="03-03-2013">
+          <span class="icon-Calendar"></span>
+        </div>
+        <div class="form-group margin-20">
+          <label for="placepos">Place/position</label>
+          <input type="text" class="textInput margin-10" id="placepos" placeholder="eg.">
+        </div>
+      </div>
+      <div class="col-1-4">
+        <div class="form-group">
+          <label for="depart">Departure</label>
+          <input type="text" class="textInput margin-10" id="depart" placeholder="eg. Departure">
+        </div>
+        <div class="form-group margin-20 with-icon">
+          <label for="time">Date</label>
+          <input type="time" class="textInput margin-10" id="time">
+          <span>hh:mm</span>
+        </div>
+        <div class="form-group margin-20">
+          <label for="weught">Weight (t)</label>
+          <input type="text" class="textInput margin-10" id="weught" placeholder="eg.">
+        </div>
+      </div>
+      <div class="col-1-4">
+        <div class="form-group">
+          <label for="desti">Destination</label>
+          <input type="text" class="textInput margin-10" id="desti" placeholder="eg. Departure">
+        </div>
+        <div class="form-group margin-20">
+          <label for="actype">A/C Type</label>
+          <input type="text" class="textInput margin-10" id="actype" placeholder="eg.">
+        </div>
+        <div class="form-group margin-20">
+          <label for="tatsat">TAT/SAT</label>
+          <input type="text" class="textInput margin-10" id="tatsat" placeholder="eg.">
+        </div>
+      </div>
+      <div class="col-1-4">
+        <div class="form-group">
+          <label for="tech">Tech form</label>
+          <input type="text" class="textInput margin-10" id="tech" placeholder="eg.">
+        </div>
+        <div class="form-group margin-20">
+          <label for="regis">Registration</label>
+          <input type="text" class="textInput margin-10" id="regis" placeholder="eg.">
+        </div>
+      </div>
+    </div>
+    <div class="hideBefSelect row">
+      <div class="col-1-5">
+        <div class="form-group">
+          <input type="checkbox" name="optgroup5" value="0" id="optgroup5_0" class="checkboxbtn" checked>
+          <label for="optgroup5_0">Parking</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="optgroup5" value="1" id="optgroup5_1" class="checkboxbtn">
+          <label for="optgroup5_1">Approach</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="optgroup5" value="2" id="optgroup5_2" class="checkboxbtn">
+          <label for="optgroup5_2">Missed approach</label>
+        </div>
+      </div>
+      <div class="col-1-5">
+        <div class="form-group">
+          <input type="checkbox" name="optgroup5" value="3" id="optgroup5_3" class="checkboxbtn" checked>
+          <label for="optgroup5_3">Cruise</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="optgroup5" value="4" id="optgroup5_4" class="checkboxbtn">
+          <label for="optgroup5_4">Landing</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="optgroup5" value="5" id="optgroup5_5" class="checkboxbtn">
+          <label for="optgroup5_5">Hold</label>
+        </div>
+      </div>
+      <div class="col-1-5">
+        <div class="form-group">
+          <input type="checkbox" name="optgroup5" value="6" id="optgroup5_6" class="checkboxbtn">
+          <label for="optgroup5_6">Descent</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="optgroup5" value="7" id="optgroup5_7" class="checkboxbtn">
+          <label for="optgroup5_7">Take-off</label>
+        </div>
+      </div>
+      <div class="col-1-5">
+        <div class="form-group">
+          <input type="checkbox" name="optgroup5" value="8" id="optgroup5_8" class="checkboxbtn">
+          <label for="optgroup5_8">Climb</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="optgroup5" value="9" id="optgroup5_9" class="checkboxbtn">
+          <label for="optgroup5_9">Push-back</label>
+        </div>
+      </div>
+      <div class="col-1-5">
+        <div class="form-group">
+          <input type="checkbox" name="optgroup5" value="10" id="optgroup5_10" class="checkboxbtn">
+          <label for="optgroup5_10">Initial climb</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="optgroup5" value="11" id="optgroup5_11" class="checkboxbtn">
+          <label for="optgroup5_11">Taxi</label>
+        </div>
+      </div>
+    </div>
+    <div class="hideBefSelect form-row row">
+      <div class="col-1-1">
+        <h2 class="title">Description</h2>
+      </div>
+      <div class="col-3-4">
+        <div class="form-group">
+          <label for="desctext">Description instruction</label>
+          <textarea class="txtarea" id="desctext"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="hideBefSelect form-row row showHideSection closed" data-id="showhide_0">
+      <div class="col-1-1 clearfix">
+        <div class="toggleCheck">
+          <input type="checkbox" name="showhide" id="showhide_0">
+          <label for="showhide_0"></label>
+        </div>
+        <h2 class="title"><label for="showhide_0">Alarm</label></h2>
+      </div>
+      <div class="showHideContainer">
+        <div class="col-3-4">
+          <div class="form-group">
+            <label for="desctext1">Description instruction</label>
+            <textarea class="txtarea" id="desctext1"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hideBefSelect form-row row showHideSection closed" data-id="showhide_1">
+      <div class="col-1-1 clearfix">
+        <div class="toggleCheck">
+          <input type="checkbox" name="showhide" id="showhide_1">
+          <label for="showhide_1"></label>
+        </div>
+        <h2 class="title"><label for="showhide_1">Approach</label></h2>
+      </div>
+      <div class="showHideContainer">
+        <div class="col-3-4">
+          <div class="form-group">
+            <label for="desctext2">Description instruction</label>
+            <textarea class="txtarea" id="desctext2"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hideBefSelect form-row row attachment">
+      <div class="col-1-4">
+        <h2 class="title"><span class="icon-Attachment"></span> Attach file</h2>
+      </div>
+      <div class="col-1-4">
+        <label for="attachment" class="btn btn-gray">Add</label>
+        <input type="file" id="attachment">
+      </div>
+      <div class="col-1-4">
+        <div class="attachment-file">
+          <span class="icon-Options"></span>
+          name
+        </div>
+        <div class="attachment-file margin-10">
+          <span class="icon-Checkmark"></span>
+          name
+        </div>
+      </div>
+      <div class="col-1-4">
+        <div class="attachment-file"></div>
+        <div class="attachment-file margin-10"></div>
+      </div>
+    </div>
+  </form>
+
+</div>  </div>
+
+  <script src="assets/javascripts/jquery.min.js"></script>
+  <script src="assets/javascripts/general.js"></script>
+  <footer class="footer">
+  <header class="table-container">
+    <div class="identity table-cell">
+      <img src="assets/images/sl-logo-header.png" alt="Safety Portal" class="logo">
+    </div>
+    <div class="contactUs table-cell">
+      <h3>Contact</h3>
+    </div>
+    <div class="followUs table-cell">
+      <h3>Follow us</h3>
+    </div>
+  </header>
+
+  <div class="content table-container">
+    <div class="identity table-cell">
+      <div class="content">
+        <p>Safety Cube Version 3 produced by Safety Line.</p>
+        <p>&copy; Safety Line 2017 - All rights reserved.</p>
+      </div>
+    </div>
+    <div class="contactUs table-cell">
+      <div class="content">
+        <p>130 rue de Lourmel - 75015 Paris</p>
+        <p>Phone: +33 (0)1 55 43 75 71</p>
+      </div>
+    </div>
+    <div class="contactUs table-cell">
+      <div class="content">
+        <p>Email: contact@safety-line.fr</p>
+        <p>Web: www.safety-line.fr</p>
+      </div>
+    </div>
+    <div class="followUs table-cell">
+      <ul class="content">
+        <li>
+          <a href="#" class="icon-Briefcase"></a>
+        </li>
+        <li>
+          <a href="#" class="icon-Camera"></a>
+        </li>
+        <li>
+          <a href="#" class="icon-Volume"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer><script src="assets/javascripts/form.js"></script></body>
+</html>

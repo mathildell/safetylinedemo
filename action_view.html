@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Safety Portal</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/css/application.css">
+</head>
+<body>
+  <div class="modal">
+  <div class="content">
+    <h2>You were disconnected</h2>
+    <a href="#" class="close icon-Cancel"></a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna wirl aliqua.</p>
+    <form class="form form-inline" action="#" method="post">
+      <div class="form-group">
+        <label for="usn">Username</label>
+        <input type="text" class="textInput" value="safety-line" name="username" id="usn">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password</label>
+        <input type="password" class="textInput" name="password" value="defaultpassword" id="pwd">
+      </div>
+      <input type="submit" class="btn btn-primary" value="Login">
+    </form>
+  </div>
+</div><header class="header">
+  <img src="assets/images/logo.png" alt="Company logo" class="logo">
+  <nav class="nav">
+    <div class="table-container">
+      <div class="table-cell logo-sl">
+        <a href="index.html" title="Safety Portal home">
+          <img src="assets/images/sl-logo-header.png" alt="Safety Portal">
+        </a>
+      </div>
+      <ul class="table-cell directnav">
+        <li class="dropdown">
+          <a href="sent_report.html" >
+            Reports
+          </a>
+          <ul>
+            <li>
+              <a href="index.html">
+                Create new report
+              </a>
+            </li>
+            <li><a href="report_collaborations.html">Other reports</a></li>
+            <li><a href="report_drafts.html">Drafts</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="finding_index.html" >Finding</a>
+        </li>
+        <li>
+          <a href="action_index.html" class="active">Action</a>
+        </li>
+        <li>
+          <a href="">Documentation</a>
+        </li>
+      </ul>
+      <div class="social table-cell">
+        <div class="notification">
+          <span class="notifNew"></span>
+          <span class="icon-Notification"></span>
+          <div class="tooltip">
+            <a href="action_view.html">Your action plan "<b>AIRPORT / Bird threat prevention action</b>" has been sent and is pending approbation from conformity management.</a>
+          </div>
+        </div>
+        <div class="message " >
+          <a href="message_index.html">
+            <span class="notifNew active"></span>
+            <span class="icon-CommentwithLines"></span>
+          </a>
+        </div>
+        <div class="user">
+          <span>RM</span>
+          <div class="tooltip">
+            Welcome <b>Romain Maillard</b> from <b>Maintenance service</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- DEMO -->
+  <div class="demoCalls">
+    <button id="demoModal">Summon modal</button>
+  </div>
+  <!-- END DEMO -->
+
+  <div class="global-background"></div>
+  <div class="global-container">
+    <div class="actions">
+  <h1 class="breadcrumbs title">
+    <a href="action_index.html">Action </a>
+    <span>&rsaquo;</span> 
+    Airport / Bird threat prevention...
+  </h1>
+  <header class="table-container">
+    <div class="table-cell">
+      <h2 class="title_secondary">
+        AIRPORT / Bird threat prevention action / Mesure de prévention aviaire
+      </h2>
+    </div>
+    <div class="table-cell">
+      <a class="msg icon-CommentwithLines" href="message_new.html">
+      </a>
+    </div>
+  </header>
+  <section class="timeline">
+    <div class="evnt past">
+      <div class="content">
+        <h3>New</h3>
+        <p>You are the owner of this new action. Please provide an answer when you have done it.</p>
+      </div>
+    </div>
+    <div class="evnt past">
+      <div class="content">
+        <h3>Action answered</h3>
+        <p>Thank you for your answer. Validation is in progress.</p>
+      </div>
+    </div>
+    <div class="evnt active original">
+      <div class="content">
+        <h3>Action validated</h3>
+        <p>Your action has been validated</p>
+      </div>
+    </div>
+    <div class="timelinedone"></div>
+  </section>
+  <form class="form">
+    <div class="form-row">
+      <div class="row">
+        <div class="col-1-1">
+          <h4 class="title">Subject</h4>
+        </div>
+        <div class="col-2-4 form-group">
+          <label>Occurence</label>
+          <input type="text" class="textInput margin-10" value="eg. Text helper" disabled>
+        </div>
+        <div class="col-2-4 form-group">
+          <label>Defense</label>
+          <input type="text" class="textInput margin-10" value="eg. Text helper" disabled>
+        </div>
+      </div>
+    </div>
+    <div class="form-row row">
+      <div class="col-1-1">
+        <h4 class="title">Summary</h4>
+      </div>
+      <div class="col-1-4 form-group">
+        <label>Created by</label>
+        <input type="text" class="textInput margin-10" value="eg. Text helper" disabled>
+      </div>
+      <div class="col-1-4 form-group">
+        <label>Date</label>
+        <input type="text" class="textInput margin-10" value="2016-03-23" disabled>
+      </div>
+      <div class="col-1-4 form-group">
+        <label>Answered by</label>
+        <input type="text" class="textInput margin-10" value="eg. Text helper" disabled>
+      </div>
+      <div class="col-1-4 form-group">
+        <label>Date</label>
+        <input type="text" class="textInput margin-10" value="2016-03-23" disabled>
+      </div>
+      <div class="col-1-4 form-group">
+        <label>Validated by</label>
+        <input type="text" class="textInput margin-10" value="eg. Text helper" disabled>
+      </div>
+      <div class="col-1-4 form-group">
+        <label>Date</label>
+        <input type="text" class="textInput margin-10" value="2016-03-23" disabled>
+      </div>
+      <div class="col-1-4 form-group">
+        <label>Reference</label>
+        <input type="text" class="textInput margin-10" value="eg. Text helper" disabled>
+      </div>
+      <div class="col-1-4 form-group">
+        <label>Deadline</label>
+        <input type="text" class="textInput margin-10" value="2016-03-23" disabled>
+      </div>
+    </div>
+
+    <div class="form-row row">
+      <div class="col-1-1">
+        <h4 class="title">Description</h4>
+      </div>
+      <div class="col-3-4">
+        <div class="form-group">
+          <textarea class="txtarea disabled" readonly>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.</textarea>
+        </div>
+      </div>
+    </div>
+    <div class="form-row row">
+      <div class="col-1-1">
+        <h4 class="title">Response</h4>
+      </div>
+      <div class="col-3-4">
+        <div class="form-group">
+          <textarea class="txtarea disabled" readonly>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.</textarea>
+        </div>
+      </div>
+    </div>
+    <div class="form-row row">
+      <div class="col-1-1">
+        <h4 class="title">Efficiency</h4>
+      </div>
+      <div class="col-3-4">
+        <div class="form-group">
+          <textarea class="txtarea disabled" readonly>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.</textarea>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-row row attachment">
+      <div class="col-1-4">
+        <h2 class="title"><span class="icon-Attachment"></span> Attached files</h2>
+      </div>
+      <div class="col-1-4">
+        <div class="attachment-file">
+          name.jpg
+        </div>
+        <div class="attachment-file margin-10">
+          name.jpg
+        </div>
+      </div>
+      <div class="col-1-4">
+      </div>
+    </div>
+  </form>
+</div>  </div>
+
+  <script src="assets/javascripts/jquery.min.js"></script>
+  <script src="assets/javascripts/general.js"></script>
+  <footer class="footer">
+  <header class="table-container">
+    <div class="identity table-cell">
+      <img src="assets/images/sl-logo-header.png" alt="Safety Portal" class="logo">
+    </div>
+    <div class="contactUs table-cell">
+      <h3>Contact</h3>
+    </div>
+    <div class="followUs table-cell">
+      <h3>Follow us</h3>
+    </div>
+  </header>
+
+  <div class="content table-container">
+    <div class="identity table-cell">
+      <div class="content">
+        <p>Safety Cube Version 3 produced by Safety Line.</p>
+        <p>&copy; Safety Line 2017 - All rights reserved.</p>
+      </div>
+    </div>
+    <div class="contactUs table-cell">
+      <div class="content">
+        <p>130 rue de Lourmel - 75015 Paris</p>
+        <p>Phone: +33 (0)1 55 43 75 71</p>
+      </div>
+    </div>
+    <div class="contactUs table-cell">
+      <div class="content">
+        <p>Email: contact@safety-line.fr</p>
+        <p>Web: www.safety-line.fr</p>
+      </div>
+    </div>
+    <div class="followUs table-cell">
+      <ul class="content">
+        <li>
+          <a href="#" class="icon-Briefcase"></a>
+        </li>
+        <li>
+          <a href="#" class="icon-Camera"></a>
+        </li>
+        <li>
+          <a href="#" class="icon-Volume"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer><script src="assets/javascripts/form.js"></script><script src="assets/javascripts/action_view.js"></script></body>
+</html>
