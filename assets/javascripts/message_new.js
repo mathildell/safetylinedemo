@@ -69,14 +69,7 @@ $(function(){
   var text, sender;
   
   $(document).on('click', '.message-container aside .content .singleMessage', function(){ 
-    if(!$(this).hasClass('active')){
-      $('.message-container aside .content .singleMessage.active').removeClass('active');
-      $(this).addClass('active');
-      title = $(this).find('h3').text();
-      sender = $(this).find('span').text();
-      $('.messageObject').text( title );
-      $('.details span').text( sender );
-    }
+    window.location.replace = '/message_view.html';
   }); 
 
 
